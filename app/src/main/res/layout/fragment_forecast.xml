@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:id="@+id/swipe_container"
     android:layout_height="match_parent"
-    tools:context=".ui.forecast_fragment.ForecastFragment">
+    tools:context=".ui.forecast.ForecastFragment">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"

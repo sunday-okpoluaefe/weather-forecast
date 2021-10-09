@@ -1,4 +1,4 @@
-package com.sunday.weatherapplication.ui.city_fragment
+package com.sunday.weatherapplication.ui.cities
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -10,8 +10,8 @@ import androidx.navigation.fragment.findNavController
 import com.sunday.weatherapplication.R
 import com.sunday.weatherapplication.data.model.City
 import com.sunday.weatherapplication.databinding.FragmentCityBinding
-import com.sunday.weatherapplication.ui.city_fragment.adapter.CityAdapter
-import com.sunday.weatherapplication.ui.city_fragment.adapter.CityViewHolder
+import com.sunday.weatherapplication.ui.cities.adapter.CityAdapter
+import com.sunday.weatherapplication.ui.cities.adapter.CityViewHolder
 import com.sunday.weatherapplication.ui.factory.MainViewModelFactory
 import dagger.hilt.android.AndroidEntryPoint
 import javax.inject.Inject

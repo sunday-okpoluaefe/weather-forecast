@@ -1,7 +1,6 @@
-package com.sunday.weatherapplication.ui.city_fragment.adapter
+package com.sunday.weatherapplication.ui.cities.adapter
 
 import android.view.LayoutInflater
-import android.view.TouchDelegate
 import android.view.ViewGroup
 import androidx.recyclerview.widget.RecyclerView
 import com.sunday.weatherapplication.data.model.City

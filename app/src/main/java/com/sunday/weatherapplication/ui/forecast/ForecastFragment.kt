@@ -1,4 +1,4 @@
-package com.sunday.weatherapplication.ui.forecast_fragment
+package com.sunday.weatherapplication.ui.forecast
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment

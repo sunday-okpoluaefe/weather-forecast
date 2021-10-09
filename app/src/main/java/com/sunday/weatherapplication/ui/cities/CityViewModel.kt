@@ -1,10 +1,8 @@
-package com.sunday.weatherapplication.ui.city_fragment
+package com.sunday.weatherapplication.ui.cities
 
 import androidx.lifecycle.*
 import com.sunday.weatherapplication.data.factory.CityFactory
 import com.sunday.weatherapplication.data.model.City
-import com.sunday.weatherapplication.service.ApiClient
-import kotlinx.coroutines.launch
 
 class CityViewModel (): ViewModel(),
     LifecycleObserver {

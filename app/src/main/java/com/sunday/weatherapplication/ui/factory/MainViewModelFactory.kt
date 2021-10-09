@@ -3,8 +3,8 @@ package com.sunday.weatherapplication.ui.factory
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.ViewModelProvider
 import com.sunday.weatherapplication.service.ApiClient
-import com.sunday.weatherapplication.ui.city_fragment.CityViewModel
-import com.sunday.weatherapplication.ui.forecast_fragment.ForecastViewModel
+import com.sunday.weatherapplication.ui.cities.CityViewModel
+import com.sunday.weatherapplication.ui.forecast.ForecastViewModel
 import java.lang.IllegalArgumentException
 import javax.inject.Inject
 

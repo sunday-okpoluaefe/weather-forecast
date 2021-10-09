@@ -1,4 +1,4 @@
-package com.sunday.weatherapplication.ui.forecast_fragment
+package com.sunday.weatherapplication.ui.forecast
 
 import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
@@ -6,7 +6,6 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import com.sunday.weatherapplication.data.remote.ForecastResponse
 import com.sunday.weatherapplication.service.ApiClient
-import kotlinx.coroutines.Dispatchers.IO
 import kotlinx.coroutines.launch
 import java.lang.Exception
 

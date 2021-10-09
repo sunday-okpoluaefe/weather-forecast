@@ -1,4 +1,4 @@
-package com.sunday.weatherapplication.ui.city_fragment.adapter
+package com.sunday.weatherapplication.ui.cities.adapter
 
 import androidx.recyclerview.widget.DiffUtil
 import com.sunday.weatherapplication.data.model.City
