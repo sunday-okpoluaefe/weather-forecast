@@ -21,6 +21,6 @@
     <string name="humidity">Humidity</string>
     <string name="wind">Wind</string>
     <string name="show">Show</string>
-    <string name="error_generic">An error occurred. kindly try again or try another location</string>
+    <string name="error_generic">An error occurred while fetching forecast\nkindly swipe down to try again</string>
     <string name="fahrenheit" translatable="false">F</string>
 </resources>

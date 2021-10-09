@@ -17,6 +17,10 @@ class ForecastViewModel (private val client: ApiClient): ViewModel() {
     private var _loading = MutableLiveData<Boolean>()
     val loading: LiveData<Boolean> = _loading
 
+    private var _error = MutableLiveData<String>()
+    val error: LiveData<String> = _error
+
+
     fun getForecast(city: String){
         viewModelScope.launch {
             try {
@@ -27,6 +31,7 @@ class ForecastViewModel (private val client: ApiClient): ViewModel() {
                 _loading.value = false
             }catch (error: Exception){
                 _loading.value = false
+                _error.value = error.toString()
             }
         }
     }
