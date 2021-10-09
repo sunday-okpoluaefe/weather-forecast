@@ -9,6 +9,7 @@ import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import com.sunday.weatherapplication.databinding.FragmentForecastBinding
 import com.sunday.weatherapplication.ui.factory.MainViewModelFactory
+import com.sunday.weatherapplication.util.extensions.loadImage
 import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.android.synthetic.main.activity_main.*
 import javax.inject.Inject
@@ -58,9 +59,15 @@ class ForecastFragment : Fragment() {
         })
 
         this.vm.forecast.observe(this, Observer {
-            println(it.base)
+           binding.apply {
+               icon.loadImage(it.weather?.first()?.iconUrl())
+               temperature.text = it.main?.temp.toString()
+               weather.text = it.weather?.first()?.main
+               "${it.main?.humidity.toString()}%".also { binding.humidity.text = it }
+               "${it.clouds?.all}%".also { binding.precipitation.text = it }
+               "${it.wind?.speed} m/h".also { binding.wind.text = it }
+           }
         })
-
 
     }
 
