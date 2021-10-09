@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_height">38dp</dimen>
+    <dimen name="horizontal_margin">16dp</dimen>
+    <dimen name="vertical_margin">16dp</dimen>
+
+    <dimen name="grid_1half">4dp</dimen>
+    <dimen name="grid1">8dp</dimen>
+    <dimen name="grid2">12dp</dimen>
+    <dimen name="grid3">16dp</dimen>
+    <dimen name="grid4">20dp</dimen>
+
+    <dimen name="title_size">18sp</dimen>
+    <dimen name="body_size">16sp</dimen>
+    <dimen name="fab_margin">16dp</dimen>
+
+    <dimen name="radius">30dp</dimen>
+    <dimen name="card_radius">20dp</dimen>
+    <dimen name="card_radius_mini">5dp</dimen>
+    <dimen name="elevation">2dp</dimen>
+    <dimen name="grid_0">2dp</dimen>
+    <dimen name="grid_1_half">3dp</dimen>
+    <dimen name="grid_1">6dp</dimen>
+    <dimen name="grid_3_half">9dp</dimen>
+    <dimen name="grid_2">12dp</dimen>
+    <dimen name="grid_5_half">15dp</dimen>
+    <dimen name="grid_3">18dp</dimen>
+    <dimen name="grid_7_half">21dp</dimen>
+    <dimen name="grid_4">24dp</dimen>
+    <dimen name="grid_9_half">27dp</dimen>
+    <dimen name="grid_5">30dp</dimen>
+    <dimen name="grid_11_half">33dp</dimen>
+    <dimen name="grid_15_half">45dp</dimen>
+    <dimen name="temp_size">64sp</dimen>
+</resources>

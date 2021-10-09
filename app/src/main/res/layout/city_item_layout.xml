@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:paddingTop="@dimen/vertical_margin"
+    android:paddingStart="@dimen/vertical_margin"
+    android:paddingRight="@dimen/vertical_margin"
+    android:layout_height="wrap_content"
+    android:id="@+id/container"
+    android:paddingLeft="@dimen/vertical_margin">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/icon"
+        android:src="@drawable/ic_location"
+        android:layout_width="@dimen/image_height"
+        android:layout_height="@dimen/image_height"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/city"
+        android:layout_marginLeft="@dimen/grid2"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toRightOf="@id/icon"
+        android:layout_width="wrap_content"
+        android:text="@string/sample_city"
+        android:textSize="@dimen/title_size"
+        android:textStyle="bold"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid2" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/country"
+        android:textSize="@dimen/body_size"
+        app:layout_constraintTop_toBottomOf="@id/city"
+        app:layout_constraintLeft_toRightOf="@id/icon"
+        android:layout_marginLeft="@dimen/grid2"
+        android:layout_width="wrap_content"
+        android:text="@string/sample_country"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/grid2" />
+
+    <View
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/country"
+        android:layout_width="match_parent"
+        android:layout_marginTop="@dimen/grid2"
+        android:background="@android:color/darker_gray"
+        android:layout_height="0.5dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
