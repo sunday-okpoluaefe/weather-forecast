@@ -5,7 +5,9 @@ import androidx.arch.core.executor.testing.InstantTaskExecutorRule
 import com.google.common.truth.Truth.assertThat
 import com.sunday.weatherapplication.MainCoroutineRule
 import com.sunday.weatherapplication.MockForecastApiClient
+import com.sunday.weatherapplication.R
 import com.sunday.weatherapplication.data.factory.ForecastFactory
+import com.sunday.weatherapplication.data.remote.ForecastResponse
 import com.sunday.weatherapplication.ui.forecast.ForecastViewModel
 import com.sunday.weatherapplication.util.extensions.getOrAwaitValue
 import kotlinx.coroutines.ExperimentalCoroutinesApi
@@ -42,5 +44,18 @@ class ForecastViewModelTest {
         this.viewModel.getForecast(city = "Abuja")
         val loading = this.viewModel.loading.getOrAwaitValue()
         assertThat(loading).isEqualTo(false)
+    }
+
+    @Test
+    fun test_onError_Show_ErrorMessage(){
+        viewModel = ForecastViewModel(object: MockForecastApiClient(){
+            override suspend fun getForeCast(location: String): ForecastResponse {
+                throw Exception("error")
+            }
+        })
+
+        this.viewModel.getForecast(city = "Abuja")
+        val error = this.viewModel.error.getOrAwaitValue()
+        assertThat(error).isEqualTo("error")
     }
 }

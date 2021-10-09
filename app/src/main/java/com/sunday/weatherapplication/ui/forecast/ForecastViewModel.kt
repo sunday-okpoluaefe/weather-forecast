@@ -31,7 +31,7 @@ class ForecastViewModel (private val client: ApiClient): ViewModel() {
                 _loading.value = false
             }catch (error: Exception){
                 _loading.value = false
-                _error.value = error.toString()
+                _error.value = error.message
             }
         }
     }
