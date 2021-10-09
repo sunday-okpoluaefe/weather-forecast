@@ -20,7 +20,7 @@ import javax.inject.Singleton
 
 @Module
 @InstallIn(SingletonComponent::class)
-abstract  class NetworkModule {
+abstract  class AppModule {
 
     companion object {
 
