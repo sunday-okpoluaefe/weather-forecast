@@ -1,13 +1,20 @@
 # Weather App
 This is a simple weather app that can take a location input, then display some details about the weather ``` Temperature ```, ``` Humidity ```, ``` Current Condition ``` and ``` Precipitation ``` from the weather [API](https://openweathermap.org/)
 
-![cities](https://user-images.githubusercontent.com/63934292/136660901-f9c697d2-aaa4-4514-8f29-0e84d4064a36.png)
-
 
 ## Description
 A user taps on any city name list in UI above. the current weather information are shown.
 
-![forecast](https://user-images.githubusercontent.com/63934292/136660916-34e83752-f415-45f8-a370-97c115113dfc.png)
+![Screen Shot 2021-10-11 at 9 39 21 AM](https://user-images.githubusercontent.com/63934292/136760099-4847a26a-8f2a-4fad-a50e-28766c0e931a.png)
+
+![forecast](https://user-images.githubusercontent.com/63934292/136760477-33497aef-becb-46d8-94e8-a286b43d5792.png)
+
+
+## Error Screen
+
+![Screen Shot 2021-10-11 at 9 39 54 AM](https://user-images.githubusercontent.com/63934292/136760304-b175e18e-eea7-4b7a-ae59-30a71ccb5f81.png)
+
+
 
 
 
@@ -15,7 +22,7 @@ A user taps on any city name list in UI above. the current weather information a
 ## Implemenation
 
 ### Making Weather Request
-Two endpoints were used here to make both current weather and future weather information
+The current weather API endpoints were used here to fetch current weather information
 
 - [Current Weather Api](https://api.openweathermap.org/data/2.5/weather?q=london) takes the location ``` country ```, ``` state ``` or ``` city ``` and returns the current weather information as well as the geographical cordinates ```lat``` and ```lon```
 
